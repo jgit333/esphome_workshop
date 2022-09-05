@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.gdd",
+        "state": "unknown",
+        "attributes": {
+          "editable": false,
+          "id": "gdd",
+          "user_id": "ea398ea8c5104b5f9bf6de59a158fb10",
+          "friendly_name": "GDD"
+        },
+        "last_changed": "2022-09-05T22:28:32.145141+00:00",
+        "last_updated": "2022-09-05T22:28:32.145141+00:00",
+        "context": {
+          "id": "01GC7W9ZRHVWAKW615RVGEA0QM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2022-09-05T22:31:05.500135+00:00"
+    }
+  ]
+}

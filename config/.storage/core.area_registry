@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "name": "Office",
+        "id": "living_room",
+        "picture": null
+      }
+    ]
+  }
+}

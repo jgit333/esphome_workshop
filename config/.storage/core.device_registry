@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [],
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "7c:9e:bd:45:36:74"
+          ]
+        ],
+        "identifiers": [],
+        "id": "ad12dfd20d0d0233c7766e95f1acbb55",
+        "orphaned_timestamp": 1662417056.115149
+      }
+    ]
+  }
+}

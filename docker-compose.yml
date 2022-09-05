@@ -1,0 +1,12 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: homeassistant/home-assistant:2022.8.1
+    volumes:
+      - ./config:/config
+    ports:
+      - 8123:8123
+    restart: always
+    network_mode: bridge
+    privileged: true
+    user: "${LOCAL_USER}:${LOCAL_USER}"

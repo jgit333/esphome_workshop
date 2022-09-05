@@ -1,0 +1,56 @@
+esphome:
+  name: office
+  platformio_options:
+    upload_speed: 115200
+    board_build.f_flash: 80000000L
+
+esp32:
+  board: lolin32
+  framework:
+    type: arduino
+
+# configuration entry for ESP32
+i2c:
+  sda: 21
+  scl: 22
+  scan: true
+
+sensor:
+  - platform: bh1750
+    name: "Office 1 Illuminance"
+    address: 0x23
+    update_interval: 60s
+  - platform: sgp30
+    eco2:
+      name: "Office 1 eCO2"
+      accuracy_decimals: 1
+    tvoc:
+      name: "Office 1 TVOC"
+      accuracy_decimals: 1
+    store_baseline: yes
+    address: 0x58
+    update_interval: 1s  
+  - platform: dht
+    pin: 17
+    temperature:
+      name: "Office 1 Temperature"
+    humidity:
+      name: "Office 1 Humidity"
+    update_interval: 60s
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "do_not_touch!"
+
+ota:
+  password: "do_not_touch!"
+
+wifi:
+  ssid: "<SSID>"
+  password: "<PSK>"
+
+captive_portal:
+    
